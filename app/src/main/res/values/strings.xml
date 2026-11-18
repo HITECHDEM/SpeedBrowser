@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">ZeroChrome</string>
+
+    <!-- Navigation -->
+    <string name="nav_launch">Launch</string>
+    <string name="nav_flags">Flags</string>
+    <string name="nav_desktop">Desktop Shell</string>
+
+    <!-- Launch Screen -->
+    <string name="hero_badge">SPEEDOMETER 3.0 MAX TUNER</string>
+    <string name="hero_title">ZeroChrome Engine</string>
+    <string name="hero_subtitle">Pure-View Chromium runner with 96MB RAM asset cache, warm V8 isolate, ADPF CPU boost, 120Hz+ rAF pacing &amp; zero Compose overlay.</string>
+    <string name="btn_launch_speedometer">Launch Speedometer 3.0</string>
+    <string name="btn_launch_custom">Launch Benchmark</string>
+    <string name="btn_prewarm_cache">Pre-Warm RAM Cache &amp; Engine</string>
+    <string name="btn_wipe_profile_now">Full Reset (Wipe RAM, Disk &amp; Cookies)</string>
+    <string name="label_target_url">Target Benchmark URL</string>
+    <string name="btn_reset_url">Reset to Speedometer 3.0</string>
+    <string name="section_device_readiness">Device Power &amp; Thermal Readiness</string>
+    <string name="btn_refresh_telemetry">Refresh</string>
+    <string name="warning_power_save">Battery Saver is ON — turn it off for full CPU/GPU clocks!</string>
+    <string name="warning_thermal">Device is warm/throttling — let it cool before scoring.</string>
+    <string name="section_presets">Quick Optimization Presets</string>
+    <string name="section_android_engine">Android Runtime Engine</string>
+    <string name="section_caching">HTTP, RAM &amp; V8 Code Caching</string>
+    <string name="section_power_java">JVM, Display &amp; Device Power</string>
+    <string name="toggle_ram_cache">96MB RAM Asset Cache (0ms I/O)</string>
+    <string name="toggle_ram_cache_desc">Caches Speedometer JS/CSS/WASM/HTML in memory with immutable V8 bytecode headers to eliminate flash/network reloads.</string>
+    <string name="toggle_keep_warm">Keep Warm Renderer &amp; Shader Pool</string>
+    <string name="toggle_keep_warm_desc">Reuses the live WebView renderer &amp; V8 isolate across consecutive runs instead of cold-restarting.</string>
+    <string name="toggle_offscreen_preraster">Offscreen Tile Pre-Raster</string>
+    <string name="toggle_offscreen_preraster_desc">Pre-renders offscreen scroll tiles (off by default so GPU focuses 100% on visible benchmark frames).</string>
+    <string name="toggle_compact_sheet">Compact Sheet Mode (Preview Window)</string>
+    <string name="toggle_compact_sheet_desc">Opens Custom Tab as a 78%-height adjustable sheet (similar to in-app preview windows) for viewport comparison.</string>
+    <string name="toggle_clean_cookies">Wipe Cookies &amp; DOM Storage on Launch</string>
+    <string name="toggle_clean_cookies_desc">Clears cookies/localStorage before each run (off by default to keep IndexedDB &amp; ServiceWorker storage warm).</string>
+    <string name="toggle_zero_overlay">Zero-Overlay Pure Mode</string>
+    <string name="toggle_zero_overlay_desc">Runs pure Android View WebView with zero Compose tree or toolbar overhead (press Back to reveal controls).</string>
+    <string name="toggle_max_refresh">Unlock Max Refresh Rate (90–144 Hz)</string>
+    <string name="toggle_max_refresh_desc">Requests highest display mode so requestAnimationFrame &amp; paint subtests aren\'t capped at 60 Hz.</string>
+    <string name="toggle_peak_burst">ADPF Peak Burst Clocks + Keep Screen On</string>
+    <string name="toggle_peak_burst_desc">Engages PerformanceHintManager ADPF session, disables sustained throttling cap &amp; locks renderer as IMPORTANT.</string>
+    <string name="status_profile_cleaned">Runtime, RAM &amp; disk caches reset cleanly</string>
+
+    <!-- Flags & Tuning Screen -->
+    <string name="flags_header_title">Chromium &amp; Hardware Tuning</string>
+    <string name="flags_header_subtitle">Configure desktop Chromium switches, V8 code cache, process priority, and GPU rasterization.</string>
+    <string name="section_process_priority">Process Priority</string>
+    <string name="section_gpu_backend">GPU Acceleration &amp; ANGLE</string>
+    <string name="section_cli_flags">Chromium Command-Line Flags</string>
+    <string name="label_custom_flags">Additional Custom CLI Flags</string>
+    <string name="hint_custom_flags">e.g. --js-flags=--max-old-space-size=4096</string>
+    <string name="badge_desktop_cli">Desktop CLI</string>
+    <string name="badge_applied_android">Applied on Android</string>
+
+    <!-- Desktop Bundle Screen -->
+    <string name="desktop_header_title">React Chrome + Direct Chromium</string>
+    <string name="desktop_header_subtitle">Ready-to-run Electron WebContentsView shell &amp; OS priority scripts generated from your active profile.</string>
+    <string name="btn_copy_file">Copy File</string>
+    <string name="btn_share_bundle">Share / Export</string>
+    <string name="msg_copied">Copied to clipboard</string>
+    <string name="arch_note_title">Direct Chromium Architecture</string>
+    <string name="arch_note_body">React renders only the 44px top toolbar in a separate WebContentsView. Speedometer executes natively in Chromium\'s compositor without an iframe or wrapper web layer.</string>
+
+    <!-- WebView Runner -->
+    <string name="webview_title_fallback">ZeroChrome Runner</string>
+    <string name="cd_back">Navigate back</string>
+    <string name="cd_reload">Reload page</string>
+    <string name="cd_hide_chrome">Enter zero-overlay pure mode</string>
+    <string name="cd_show_chrome">Restore minimal toolbar</string>
+    <string name="cd_exit_runner">Close benchmark runner</string>
+    <string name="msg_custom_tab_fallback">Chrome Custom Tabs unavailable; opened in system browser.</string>
+    <string name="msg_gpu_software">Software Canvas</string>
+    <string name="msg_gpu_hardware">Hardware GPU</string>
+</resources>

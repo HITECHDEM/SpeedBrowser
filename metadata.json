@@ -1,0 +1,6 @@
+{
+  "name": "ZeroChrome",
+  "description": "Minimal Chromium Speedometer 3.1 benchmark launcher, zero-overlay WebView runner, and React-chrome desktop shell configurator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
